@@ -1,7 +1,12 @@
 html,
 body {
+  position: relative;
+  height: 100%;
+  background-color: #e2e9ca;
+  overflow-y: hidden;
   padding: 0;
   margin: 0;
+  /* scroll-behavior: smooth; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +18,188 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: calc(1280px - (80px * 2));
+}
+.bg-megamendung {
+  background-image: url(/megamendung_pattern.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+}
+.bg-japan-wave {
+  background-image: url(/japan-wave.jpg);
+  background-size: 200px;
+  background-repeat: repeat;
+}
+.bg-white-09 {
+  background-color: rgba(242, 237, 244, 0.9);
+}
+
+.bg-red02-09 {
+  background-color: rgba(48, 21, 10, 0.9);
+}
+.hid::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+  background-color: #cd0c0d;
+}
+.hidq::-webkit-scrollbar {
+  width: 0px;
+}
+.hid::-webkit-scrollbar-thumb {
+  background: #30150a;
+  border-radius: 5px;
+}
+.foto {
+  width: 300px;
+  height: 400px;
+}
+.foto::before {
+  content: "";
+  border: 10px solid #cd0c0d;
+  display: flex;
+  width: 330px;
+  position: absolute;
+  height: 430px;
+}
+.foto::after {
+  content: "";
+  border: 10px solid rgba(48, 21, 10, 1);
+  display: flex;
+  position: absolute;
+  width: 330px;
+  height: 430px;
+  top: -30px;
+  left: -30px;
+}
+.h-terakhir {
+  height: calc(100vh - (64px * 2));
+  /* background-color: #cd0c0d; */
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blink {
+  animation: blink 0.5s linear infinite;
+}
+.text-sec::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e9ca;
+  border-left: 3px solid #30150a;
+  top: 0;
+  left: 0;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.nav {
+  position: absolute;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+}
+
+.nav .toggel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+.toggel .IndukBtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999999999px;
+  background-color: rgba(48, 21, 10, 0.9);
+  z-index: 100;
+  cursor: pointer;
+  transform: rotate(-225deg);
+  transition: all 0.6s ease;
+}
+
+.toggel .menuchild {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.menuchild #btnchild {
+  transform: rotate(calc(var(--i) * (360deg / -8) + 45deg));
+}
+
+.open .toggel .menuchild {
+  opacity: 1;
+}
+.--1 {
+  --i: 1;
+}
+.--2 {
+  --i: 2;
+}
+.--3 {
+  --i: 3;
+}
+.--4 {
+  --i: 4;
+}
+.--5 {
+  --i: 5;
+}
+.--6 {
+  --i: 6;
+}
+.--7 {
+  --i: 7;
+}
+.--8 {
+  --i: 8;
+}
+.--9 {
+  --i: 9;
+}
+
+.open .toggel .posisiKiri {
+  transform: rotate(calc(var(--i) * (360deg / 8))) translateY(80px);
+}
+.open .toggel .posisiKanan {
+  transform: rotate(calc(var(--i) * (360deg / 8))) translateY(-80px);
 }
