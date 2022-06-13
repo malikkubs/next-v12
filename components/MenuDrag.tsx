@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 function MenuDarg() {
@@ -117,6 +118,7 @@ function MenuDarg() {
           </div>
           {dataMenu.map((data, i) => (
             <div
+              key={i}
               id="cil"
               className={`menuchild bg-red02 shadow-lg rounded-full posisiKiri --${
                 i + 1
@@ -124,7 +126,7 @@ function MenuDarg() {
             >
               <div id="btnchild" onClick={() => setAktive(false)}>
                 <a href={data.link}>
-                  <img src={data.icon} />
+                  <Image layout="fill" alt="jaja" src={data.icon} />
                 </a>
               </div>
             </div>

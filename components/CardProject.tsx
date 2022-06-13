@@ -6,6 +6,7 @@ function CardProjects({ logo, title, status }: any) {
       <div className=" bg-putih rounded-lg p-4">
         <div style={{ paddingBottom: "100%" }} className="relative">
           <Image
+            alt="project"
             layout="fill"
             src={logo}
             className="absolute inset-0 rounded-md"

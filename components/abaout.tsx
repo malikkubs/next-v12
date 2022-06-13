@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button, { Button2 } from "./Button";
 
 function Abaout({ body }: any) {
@@ -29,7 +30,8 @@ function Abaout({ body }: any) {
               <img
                 className="w-full h-full object-cover"
                 src="/foto.png"
-                // alt="seoarang sedang menunjukan kedua ibu jari tanganya"
+                // layout="fill"
+                alt="seoarang sedang menunjukan kedua ibu jari tanganya"
               />
             </div>
           </div>

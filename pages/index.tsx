@@ -158,6 +158,7 @@ function Home() {
                         <div className="flex flex-wrap">
                           {dataHome[0]?.myprojects?.map((data, index) => (
                             <div
+                              key={index}
                               className="p-3  w-1/2 lg:w-1/4"
                               onClick={() => dataDetailOpen(index)}
                             >

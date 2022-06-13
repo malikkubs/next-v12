@@ -19,6 +19,7 @@ function DetailMyProject({ open, onClose, data }: any) {
           <div className="w-1/2">
             <div style={{ paddingBottom: "100%" }} className=" relative">
               <Image
+                alt="ini gambar"
                 src={data?.logo}
                 layout="fill"
                 className="absolute inset-0"
@@ -35,7 +36,7 @@ function DetailMyProject({ open, onClose, data }: any) {
           <p className="text-base lg:text-xl font-bold text-red02">Tag</p>
           <div className="flex flex-row flex-wrap py-3">
             {data?.tag?.map((data: string, index: any) => (
-              <div className="bg-red02 py-1 px-2 mr-2 rounded-md">
+              <div key={index} className="bg-red02 py-1 px-2 mr-2 rounded-md">
                 <p className="text-putih text-sm">{data}</p>
               </div>
             ))}

@@ -10,9 +10,9 @@ function MySkill({ data }) {
         <p className="text-red02 text-center text-4xl font-bold">My Skill</p>
 
         <div className="h-full overflow-y-auto hidq">
-          <div className="flex flex-wrap -mx-4 ">
+          <div className="flex flex-wrap  mx-0 lg:-mx-4 ">
             {data.map((data, i) => (
-              <div className="p-4 w-1/2 lg:w-1/3 ">
+              <div key={i} className="p-4 w-1/2 lg:w-1/3 ">
                 <Card text={data.title} />
               </div>
             ))}

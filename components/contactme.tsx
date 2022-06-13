@@ -11,7 +11,7 @@ function ContactMe() {
               Contact Me
             </p>
             <p className="text-red02 w-2/3 lg:w-full text-xl pt-3 text-center">
-              Let's work together, to create Masterpiece
+              Let&#x27s work together, to create Masterpiece
             </p>
             <div className=" flex justify-center items-center">
               <div className="flex flex-row">
