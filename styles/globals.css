@@ -243,3 +243,43 @@ a {
     left: 0%;
   }
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blink {
+  animation: blink 0.5s linear infinite;
+}
+.text-sec::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e9ca;
+  border-left: 3px solid #30150a;
+  top: 0;
+  left: 0;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
