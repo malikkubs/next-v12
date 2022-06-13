@@ -19,7 +19,7 @@ function MySkill({ data }) {
           </div>
         </div>
         <div className="flex py-3 px-3">
-          <Button text="My Projects" href={"/#contact-me"} />
+          <Button text="My Projects" href={"/#myprojects"} />
           <div className="w-4" />
           <Button2
             text="Hire Me"
