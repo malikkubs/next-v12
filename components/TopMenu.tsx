@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import MenuDarg from "./MenuDrag";
 
 function TopMenu({
@@ -11,6 +12,7 @@ function TopMenu({
   keywords = "kuno id, mobil, klasik, kuno, vintage, hotrod, ratrod, bengkel, restorasi, modifikasi, custom, marketplace, komunitas, artikel, antik, antique, car",
   children,
 }: any) {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -56,16 +58,6 @@ function TopMenu({
           name="viewport"
           content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
         />
-
-        <meta
-          name="viewport"
-          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;"
-        />
-
-        <meta
-          name="viewport"
-          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"
-        />
       </Head>
       <div className="overflow-clip">
         <MenuDarg />
@@ -75,9 +67,8 @@ function TopMenu({
         <div className="bg-red02 w-full flex fixed z-50">
           <div className="container h-16 mx-4 lg:mx-auto flex-row flex justify-between items-center">
             <div className="flex items-center justify-center">
-              <Image
-                width={128}
-                height={43}
+              <img
+                onClick={() => router.push("/")}
                 src="/logo.svg"
                 alt="ini logo bertulisan yudian"
               />

@@ -27,12 +27,12 @@ a {
   max-width: calc(1280px - (80px * 2));
 }
 .bg-megamendung {
-  background-image: url(/megamendung_pattern.jpg);
+  background-image: url(/megamendung10.webp);
   background-size: 500px;
   background-repeat: repeat;
 }
 .bg-japan-wave {
-  background-image: url(/japan-wave.jpg);
+  background-image: url(/jepan.webp);
   background-size: 200px;
   background-repeat: repeat;
 }
