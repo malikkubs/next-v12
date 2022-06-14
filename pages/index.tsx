@@ -18,7 +18,7 @@ interface Data {
   [key: string]: any;
   myprojects: DatDqwertya2[];
 }
-const DataJson: Data[] = require("../Json/home.json");
+const DataJson: Data[] = require("../json/home.json");
 
 function Home() {
   const [text, setText] = useState("");
