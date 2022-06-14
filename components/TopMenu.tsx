@@ -49,6 +49,10 @@ function TopMenu({
         <meta property="twitter:description" content={desc}></meta>
         <meta property="twitter:image" content={image}></meta>
         <meta name="theme-color" content="#cd0c0d" />
+        <meta
+          name="google-site-verification"
+          content="d9CcGvy92CknmEY4Y_N4mHk5qg7CQtt546K9TfW7ZOQ"
+        />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <meta
           name="viewport"
