@@ -6,7 +6,7 @@ function Footer() {
       <div className="container h-16 w-full  mx-4 lg:mx-auto flex-row flex justify-between items-center">
         <div className="flex flex-row justify-between w-full items-center">
           <div
-            onClick={() => window.open("https://wa.me/+8971675097")}
+            onClick={() => window.open("https://wa.me/+628971675097")}
             className="flex flex-row items-center"
           >
             <Image

@@ -3,7 +3,7 @@ import Button, { Button2 } from "./Button";
 function Abaout({ body }: any) {
   return (
     <div className="w-full h-screen container mx-auto pt-16">
-      <div className="py-4 h-full">
+      <div className="py-6 lg:py-4 h-full">
         <div className="bg-white-09 w-full h-full shadow-2xl relative rounded-2xl">
           <div className="h-full p-0 lg:pr-8 flex items-center justify-between flex-row">
             <div className="w-full lg:w-2/3 h-full flex flex-col p-4">
@@ -20,7 +20,7 @@ function Abaout({ body }: any) {
                 <Button2
                   text="Hire Me"
                   href={() => {
-                    window.open("https://wa.me/+8971675097");
+                    window.open("https://wa.me/+628971675097");
                   }}
                 />
               </div>

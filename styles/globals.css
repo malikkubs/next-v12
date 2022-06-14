@@ -283,3 +283,8 @@ a {
     left: 0%;
   }
 }
+@media screen and (max-width: 360px) {
+  .body {
+    overflow-y: auto;
+  }
+}

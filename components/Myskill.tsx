@@ -6,7 +6,7 @@ function MySkill({ data }) {
 
   return (
     <div className="w-full h-screen container mx-auto pt-16">
-      <div className="w-full py-4 flex flex-col h-full">
+      <div className="w-full py-6 lg:py-4 flex flex-col h-full">
         <p className="text-red02 text-center text-4xl font-bold">My Skill</p>
 
         <div className="h-full overflow-y-auto hidq">
@@ -24,7 +24,7 @@ function MySkill({ data }) {
           <Button2
             text="Hire Me"
             href={() => {
-              window.open("https://wa.me/+8971675097");
+              window.open("https://wa.me/+628971675097");
             }}
           />
         </div>

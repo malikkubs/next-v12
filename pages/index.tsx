@@ -146,7 +146,7 @@ function Home() {
           </section>
           <section id="myprojects" className="bg-japan-wave ">
             <div className="w-full h-screen container mx-auto pt-16">
-              <div className="py-4 h-full">
+              <div className="py-6 lg:py-4 h-full">
                 <div className="bg-red02-09 w-full h-full shadow-2xl relative rounded-2xl">
                   <div className="h-full flex flex-col">
                     <div className="w-full h-full flex flex-col  ">
@@ -178,7 +178,7 @@ function Home() {
                         <Button2
                           text="Hire Me"
                           href={() => {
-                            window.open("https://wa.me/+8971675097");
+                            window.open("https://wa.me/+628971675097");
                           }}
                         />
                       </div>
