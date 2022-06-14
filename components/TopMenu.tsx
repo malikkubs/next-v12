@@ -29,6 +29,9 @@ function TopMenu({
         <meta name="author" content={title} />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="id" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/1.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
 
         <meta
           name="google-site-verification"
@@ -44,8 +47,27 @@ function TopMenu({
         <meta property="twitter:description" content={desc}></meta>
         <meta property="twitter:image" content={image}></meta>
         <meta name="theme-color" content="#cd0c0d" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+        />
+
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;"
+        />
+
+        <meta
+          name="viewport"
+          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"
+        />
       </Head>
-      <div className="">
+      <div className="overflow-clip">
         <MenuDarg />
         {/* <div style={{ zIndex: "9" }} className="absolute inset-0 ">
           

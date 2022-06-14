@@ -1,8 +1,6 @@
 import { Dialog } from "@material-ui/core";
 import Image from "next/image";
 function DetailMyProject({ open, onClose, data }: any) {
-  console.log(data, "didetail");
-
   return (
     <Dialog
       key={data?.logo}

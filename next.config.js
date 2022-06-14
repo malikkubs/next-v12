@@ -6,5 +6,5 @@ const nextConfig = {
     defaultLocale: "en",
   },
 };
-
-module.exports = nextConfig;
+const withOffline = require("next-offline");
+module.exports = withOffline(nextConfig);

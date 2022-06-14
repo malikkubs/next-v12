@@ -47,10 +47,7 @@ function Home() {
 
   useEffect(() => {
     textload();
-    console.log("jalan");
     let inter = setInterval(() => {
-      console.log("tes");
-
       textload();
     }, 16000);
     return () => {
@@ -74,13 +71,12 @@ function Home() {
   function dataDetailOpen(index: number) {
     setOpenDetail(true);
     const data = dataHome[0]?.myprojects.filter((x, i) => i === index);
-    console.log(data);
 
     setDataDetail(data);
   }
 
   function replaceFonts(bodyText: string) {
-    console.log(bodyText);
+    // console.log(bodyText);
     if (!bodyText) {
       return "";
     }

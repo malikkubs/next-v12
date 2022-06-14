@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button, { Button2 } from "./Button";
 
 function Abaout({ body }: any) {
@@ -26,10 +27,10 @@ function Abaout({ body }: any) {
               </div>
             </div>
             <div className="foto relative hidden lg:flex">
-              <img
-                className="w-full h-full object-cover"
+              <Image
+                className="w-full h-full object-cover absolute inset-0 z-0"
                 src="/foto.png"
-                // layout="fill"
+                layout="fill"
                 alt="seoarang sedang menunjukan kedua ibu jari tanganya"
               />
             </div>

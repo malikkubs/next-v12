@@ -2,13 +2,16 @@ import { useEffect, useState } from "react";
 
 function MenuDarg() {
   const [aktive, setAktive] = useState(false);
-  let data = [
+  const data = [
     { id: 1, link: "/#home", icon: "/home.svg" },
     { id: 2, link: "/#about-me", icon: "/about.svg" },
     { id: 3, link: "/#myskill", icon: "/myskill.svg" },
     { id: 4, link: "/#myprojects", icon: "/portfolio.svg" },
     { id: 5, link: "/#contact-me", icon: "/email.svg" },
   ];
+  // console.log("awal", data);
+  const dataReverse = [...data].reverse();
+  // console.log("akhir", data, dataReverse);
   let dataKanan = [
     { id: 5, link: "/#contact-me", icon: "/email.svg" },
     { id: 4, link: "/#myprojects", icon: "/portfolio.svg" },
@@ -18,17 +21,6 @@ function MenuDarg() {
   ];
   const [dataMenu, setDataMenu] = useState(data);
   let qwert = [1, 2, 3, 4, 5, 6];
-  console.log(
-    "kiri",
-    qwert.sort((a, z) => a - z)
-  );
-  console.log(
-    "bukan kiri",
-    qwert.sort((a, z) => z - a)
-  );
-
-  // const kiri = data.sort((a, b) => a.id - b.id);
-  // const kanan = data.sort((ac, bc) => bc.id - ac.id);
 
   function menuOpen() {
     setAktive(!aktive);
@@ -117,7 +109,7 @@ function MenuDarg() {
             className="IndukBtn shadow-lg opacity-75"
             onClick={() => menuOpen()}
           >
-            <img src="/menu.svg" />
+            <img src="/menu.svg" alt="menu" />
           </div>
           {dataMenu.map((data, i) => (
             <div

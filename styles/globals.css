@@ -66,6 +66,7 @@ a {
   width: 330px;
   position: absolute;
   height: 430px;
+  z-index: 2;
 }
 .foto::after {
   content: "";
