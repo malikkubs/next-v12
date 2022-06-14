@@ -2,30 +2,33 @@ import { useEffect, useState } from "react";
 
 function MenuDarg() {
   const [aktive, setAktive] = useState(false);
-  const data = [
-    {
-      link: "/#contact-me",
-      icon: "/email.svg",
-    },
-    {
-      link: "/#myprojects",
-      icon: "/portfolio.svg",
-    },
-    {
-      link: "/#myskill",
-      icon: "/myskill.svg",
-    },
-    {
-      link: "/#about-me",
-      icon: "/about.svg",
-    },
-    {
-      link: "/#home",
-      icon: "/home.svg",
-    },
+  let data = [
+    { id: 1, link: "/#home", icon: "/home.svg" },
+    { id: 2, link: "/#about-me", icon: "/about.svg" },
+    { id: 3, link: "/#myskill", icon: "/myskill.svg" },
+    { id: 4, link: "/#myprojects", icon: "/portfolio.svg" },
+    { id: 5, link: "/#contact-me", icon: "/email.svg" },
   ];
-  const kanan = data.reverse();
+  let dataKanan = [
+    { id: 5, link: "/#contact-me", icon: "/email.svg" },
+    { id: 4, link: "/#myprojects", icon: "/portfolio.svg" },
+    { id: 3, link: "/#myskill", icon: "/myskill.svg" },
+    { id: 2, link: "/#about-me", icon: "/about.svg" },
+    { id: 1, link: "/#home", icon: "/home.svg" },
+  ];
   const [dataMenu, setDataMenu] = useState(data);
+  let qwert = [1, 2, 3, 4, 5, 6];
+  console.log(
+    "kiri",
+    qwert.sort((a, z) => a - z)
+  );
+  console.log(
+    "bukan kiri",
+    qwert.sort((a, z) => z - a)
+  );
+
+  // const kiri = data.sort((a, b) => a.id - b.id);
+  // const kanan = data.sort((ac, bc) => bc.id - ac.id);
 
   function menuOpen() {
     setAktive(!aktive);
@@ -47,7 +50,8 @@ function MenuDarg() {
     }
     let child1 = document.getElementsByClassName("menuchild");
     if (a > width / 2) {
-      setDataMenu(kanan);
+      setDataMenu(dataKanan);
+      // setDataMenu(dataMenu.sort((a, b) => a.id - b.id));
       for (let i = 0; i < child1.length; i++) {
         console.log(i, child1[i], "qwerty");
         child1[i].className = child1[i].className.replace(
@@ -117,7 +121,7 @@ function MenuDarg() {
           </div>
           {dataMenu.map((data, i) => (
             <div
-              key={i}
+              key={data.id}
               id="cil"
               className={`menuchild bg-red02 shadow-lg rounded-full posisiKiri --${
                 i + 1
