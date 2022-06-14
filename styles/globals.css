@@ -82,8 +82,11 @@ a {
   /* background-color: #cd0c0d; */
 }
 .h-s {
-  height: calc(100vh - (64px));
+  height: calc(100vh - (60px));
   /* background-color: #cd0c0d; */
+}
+.pb-60px {
+  padding-bottom: calc(60px);
 }
 .line-clamp {
   display: -webkit-box;
@@ -285,10 +288,5 @@ a {
   }
   100% {
     left: 0%;
-  }
-}
-@media screen and (max-width: 360px) {
-  body {
-    overflow-y: auto;
   }
 }
