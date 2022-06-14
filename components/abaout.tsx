@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button, { Button2 } from "./Button";
 
 function Abaout({ body }: any) {
