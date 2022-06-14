@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 function ContactMe() {
   return (
-    <div className="w-full h-terakhir lg:h-screen  pt-16 pb-8">
+    <div className="w-full h-s  lg:h-screen  pt-16 pb-8">
       <div className="py-4 h-terakhir container mx-auto">
         <div className="bg-putih w-full h-full shadow-2xl relative rounded-2xl overflow-hidden">
           <div className="w-full h-full absolute z-20 flex flex-col justify-center items-center">

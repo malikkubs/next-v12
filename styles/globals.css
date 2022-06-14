@@ -81,6 +81,10 @@ a {
   height: calc(100vh - (64px * 2));
   /* background-color: #cd0c0d; */
 }
+.h-s {
+  height: calc(100vh - (64px));
+  /* background-color: #cd0c0d; */
+}
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;

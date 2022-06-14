@@ -2,7 +2,7 @@ import Button, { Button2 } from "./Button";
 
 function Abaout({ body }: any) {
   return (
-    <div className="w-full h-terakhir lg:h-screen  container mx-auto pt-16">
+    <div className="w-full h-s  lg:h-screen  container mx-auto pt-16">
       <div className="py-6 lg:py-4 h-full">
         <div className="bg-white-09 w-full h-full shadow-2xl relative rounded-2xl">
           <div className="h-full p-0 lg:pr-8 flex items-center justify-between flex-row">

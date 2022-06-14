@@ -5,7 +5,7 @@ function MySkill({ data }) {
   console.log("dT", data);
 
   return (
-    <div className="w-full h-terakhir lg:h-screen  container mx-auto pt-16">
+    <div className="w-full h-s  lg:h-screen  container mx-auto pt-16">
       <div className="w-full py-6 lg:py-4 flex flex-col h-full">
         <p className="text-red02 text-center text-4xl font-bold">My Skill</p>
 
