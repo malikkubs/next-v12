@@ -43,7 +43,7 @@ function ContactMe() {
                 />
                 <IconCard
                   label="Instagram"
-                  src="/ig.svg"
+                  src="/ig-red.svg"
                   link={() => {
                     window.open(
                       "https://www.instagram.com/yudian_nanda_malik/"
