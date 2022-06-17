@@ -31,7 +31,11 @@ function TopMenu({
         <meta name="author" content={title} />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="id" />
-        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="manifest"
+          href="/manifest.json"
+          crossOrigin="use-credentials"
+        />
         <link rel="apple-touch-icon" href="/1.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
 
