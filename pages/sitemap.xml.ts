@@ -10,10 +10,10 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     res.write(`
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.example.com/foo.html</loc>
+    <loc>https://next-karyayudi-id.vercel.app</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2021-11-03T03:16:20.318Z</lastmod>
+    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
   </url>
 </urlset>`);
     res.end();
