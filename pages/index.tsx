@@ -129,7 +129,7 @@ function Home() {
                     {parse(replaceFonts(dataHome[0]?.abaout))}
                   </div>
                   <div id="gap" className="h-6" />
-                  <Button text="Abaute Me" href={"/#about-me"} />
+                  <Button text="Aboute Me" href={"/#about-me"} />
                 </div>
               </div>
             </div>

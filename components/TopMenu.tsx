@@ -7,9 +7,9 @@ function TopMenu({
   ogtype = "Presonal Profile",
   subtitle = "Sebuah situs web Profil pribadi dari Yudian Nanda Malik ",
   title = "karyayudi.id - " + subtitle,
-  desc = "Situs Restorasi, Marketplace, dan Forum Mobil Kuno & Klasik Pertama di Indonesia",
+  desc = "Situs Personal, Untuk Memperkenalkan siapa saya.",
   image = "/thumbnail.jpeg",
-  keywords = "kuno id, mobil, klasik, kuno, vintage, hotrod, ratrod, bengkel, restorasi, modifikasi, custom, marketplace, komunitas, artikel, antik, antique, car",
+  keywords = "yudian, malik, karyayudi.id, pemrograman, laravel,nextjs, reactjs,tailwind, petugas partai,",
   children,
 }: any) {
   const router = useRouter();
@@ -29,7 +29,6 @@ function TopMenu({
         <meta name="news_keywords" content={keywords} />
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content={title} />
-        <meta name="robots" content="index, follow" />
         <meta name="language" content="id" />
         <link
           rel="manifest"
