@@ -1,6 +1,24 @@
 import { Dialog } from "@material-ui/core";
 import Image from "next/image";
+import parse from "html-react-parser";
 function DetailMyProject({ open, onClose, data }: any) {
+  function replaceFonts(bodyText: string) {
+    console.log(bodyText);
+    if (!bodyText) {
+      return "";
+    }
+    let newBody: string;
+    newBody = bodyText.replace(/<h2/g, '<h2 class="fontnova mt-0"');
+    newBody = newBody.replace(/<h3/g, '<h3 class="fontnova mt-0"');
+    newBody = newBody.replace(/<h4/g, '<h4 class="fontnova mt-0"');
+    newBody = newBody.replace(/<h5/g, '<h5 class="fontnova mt-0"');
+    newBody = newBody.replace(/<h6/g, '<h6 class="fontnova mt-0"');
+    newBody = newBody.replace(
+      /<p/g,
+      '<p class="text-base lg:text-xl text-red02 py-3"'
+    );
+    return newBody;
+  }
   return (
     <Dialog
       key={data?.logo}
@@ -30,7 +48,9 @@ function DetailMyProject({ open, onClose, data }: any) {
             {data?.nameProject}
           </p>
           <p className="text-base lg:text-xl font-bold text-red02">Deskripsi</p>
-          <p className="text-base lg:text-xl text-red02 py-3">{data?.des}</p>
+
+          {parse(replaceFonts(data?.des))}
+
           <p className="text-base lg:text-xl font-bold text-red02">Tag</p>
           <div className="flex flex-row flex-wrap py-3">
             {data?.tag?.map((data: string, index: any) => (

@@ -15,7 +15,7 @@
       {
         "logo": "/img-project/desaku.jpg",
         "nameProject": "Desaku.id",
-        "des": "Project Desaku.id adalah sebuah platform yang kami buat untuk mengikuti sebuah lomba 12jam ngoding di sebuah kampus di Salatiga UKSW, yang dimana tujuan dari desaku.id adalah memfasilitasi para petani untuk menjual hasil pannenya sebelum waktu panen. Untuk purwarupanya, kami (Yudian dan Faiz) mengunakan codeigniter, akan tetapi waktu lombnya Kami membuatnya dengan php natif dan mysql sebagai databasenya karena keterbatasan ilmu Kami.",
+        "des": "<p>Project Desaku.id adalah sebuah platform yang kami buat untuk mengikuti sebuah lomba 12jam ngoding di sebuah kampus di Salatiga UKSW, yang dimana tujuan dari desaku.id adalah memfasilitasi para petani untuk menjual hasil pannenya sebelum waktu panen. Untuk purwarupanya, kami (Yudian dan Faiz) mengunakan codeigniter, akan tetapi waktu lombnya Kami membuatnya dengan php natif dan mysql sebagai databasenya karena keterbatasan ilmu Kami.</p>",
         "status": "Complated",
         "tahun": "2017",
         "tag": ["php", "mysql"]
@@ -23,7 +23,7 @@
       {
         "logo": "/img-project/mkstudio.jpg",
         "nameProject": "MKStudio",
-        "des": "MKStudio sebuah platform untuk memfasilitasi para fotografer, pemilik studio, dan user yang ingin memakai jasa fotografer untuk membuat foto prewad,wisuda dan sebagainya. project ini saya buat untuk keperluan Tugas Akhir sebagai syarat Wisuda ditahun 2018 di Unisbank Semarang. Saya mengunakan php native dan penyimpanan database di mysql.",
+        "des": "<p>MKStudio sebuah platform untuk memfasilitasi para fotografer, pemilik studio, dan user yang ingin memakai jasa fotografer untuk membuat foto prewad,wisuda dan sebagainya. project ini saya buat untuk keperluan Tugas Akhir sebagai syarat Wisuda ditahun 2018 di Unisbank Semarang. Saya mengunakan php native dan penyimpanan database di mysql.</p>",
         "status": "Complated",
         "tahun": "2018",
         "tag": ["php", "mysql"]
@@ -31,7 +31,7 @@
       {
         "logo": "/img-project/kuno.jpg",
         "nameProject": "Kunoid",
-        "des": "kuno.id Situs Restorasi, Marketplace, dan Forum Mobil Kuno & Klasik Pertama di Indonesia. saya kerjakan kaera saya bekerja di sebuah startup di semarang. Project tersebut lanjutan dari karyawan sebelumnya.",
+        "des": "<p>kuno.id Situs Restorasi, Marketplace, dan Forum Mobil Kuno & Klasik Pertama di Indonesia. saya kerjakan karena saya bekerja di sebuah startup di semarang. Project tersebut lanjutan dari karyawan sebelumnya. Saya Melanjutkan dibidang Frontend</p><a href='https://kuno.id/' target='_blank'>Kunjungi Website Klik Disini</a>",
         "status": "onGoing",
         "tahun": "2020 - Now",
         "tag": [
@@ -46,15 +46,32 @@
       {
         "logo": "/img-project/cashire.png",
         "nameProject": "Cashire App",
-        "des": "Cashire App adalah mesin kasir digital untuk Mamak saya yang tengah jualan di toko kelontontong dan di bantu suaminya maupun anaknya akan tetapi harganya yang masih di tulis sebuah kertas secara manual. Membuat sangat tidak effektif ketika ada kenaikan harga,dan item yang sudah sangan banyak. Jadi saya membuat cahire app dengan fitur saat kita scen barcode harga akan tampil di layar. ",
+        "des": "<p>Cashire App adalah mesin kasir digital untuk Mamak saya yang tengah jualan di toko kelontontong dan di bantu suaminya maupun anaknya akan tetapi harganya yang masih di tulis sebuah kertas secara manual. Membuat sangat tidak effektif ketika ada kenaikan harga,dan item yang sudah sangan banyak. Jadi saya membuat cahire app dengan fitur saat kita scen barcode harga akan tampil di layar.</p> ",
         "status": "ComingSoon",
         "tahun": "-",
         "tag": ["ReactNative", "Laravel", "NodeJs", "Typescript"]
       },
+
+      {
+        "logo": "/img-project/logo-game.png",
+        "nameProject": "Zombie Game",
+        "des": "<p>Zombie Game adalah media latihan saya membuat game mengunakan Unity. Jadi Konsep gamenya, anda harus mencari jalan pulang untuk naik level ya. untuk mau tahu kelanjutanya tunggu part 2.</p><a href='https://game-zombie.vercel.app/' target='_blank'>Kunjungi Game Klik Disini</a> ",
+        "status": "Complated",
+        "tahun": "2022",
+        "tag": ["Unity3D", "C#"]
+      },
       {
         "logo": "/img-project/ambyarfood.jpg",
         "nameProject": "ambyarfood.id",
-        "des": "ambyarfood.id Situs Company Profile yang menjual makanan ringan khas searang, berupa Mantan(Makaroni Setan), Kirpik Tempe cap gedung DPR. produk tesebut unit usaha Yudian Malik bisa kunjungi di Instagram @ambyarfooddd",
+        "des": "<p>ambyarfood.id Situs Company Profile yang menjual makanan ringan khas searang, berupa Mantan(Makaroni Setan), Kirpik Tempe cap gedung DPR. produk tesebut unit usaha Yudian Malik bisa kunjungi di Instagram <a href='https://www.instagram.com/ambyarfooddd/' target='_blank'>@ambyarfooddd</a></p><a href='https://ambyarfood-com.vercel.app/' target='_blank'>Kunjungi Website Klik Disini</a>",
+        "status": "Complated",
+        "tahun": "2020",
+        "tag": ["NextJs", "ReactJs", "TillwindCss", "NodeJs", "Typescript"]
+      },
+      {
+        "logo": "/img-project/karyayudi.png",
+        "nameProject": "karyayudi.id",
+        "des": "<p>Karyayudi.id adalah sebuat platform saya memamerkan karya yang saya buat sementara ini masih memakai domain dari vercel dan menampilkan secara statis biar budget tidak terlalu mahal untuk yang merasa iba bisa donation melalui paypal <a href='https://www.paypal.com/paypalme/yudiannanda' target='_blank'>@yudiannanda</a></p><a href='https://next-karyayudi-id.vercel.app/' target='_blank'>Kunjungi Website Klik Disini</a>",
         "status": "Complated",
         "tahun": "2020",
         "tag": ["NextJs", "ReactJs", "TillwindCss", "NodeJs", "Typescript"]
@@ -62,7 +79,7 @@
       {
         "logo": "/img-project/jokocomic.jpg",
         "nameProject": "jokocomic.id",
-        "des": "jokocomic.id adalah sebuah website yang akan saya buat untuk membaca comic buatan Indonesia secara berlangganan, untuk meningkatkan Industri Kreatif yang lebih sehat. Kenapa harus Sehat industri akan bertumbuh saat pembaca, penikmat dan pembuat karya saling menghargai tanpa adanya pembajakan.",
+        "des": "<p>jokocomic.id adalah sebuah website yang akan saya buat untuk membaca comic buatan Indonesia secara berlangganan, untuk meningkatkan Industri Kreatif yang lebih sehat. Kenapa harus Sehat industri akan bertumbuh saat pembaca, penikmat dan pembuat karya saling menghargai tanpa adanya pembajakan.</p>",
         "status": "ComingSoon",
         "tahun": "-",
         "tag": ["NextJs", "ReactJs", "TillwindCss", "NodeJs", "Typescript"]
