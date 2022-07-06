@@ -55,7 +55,7 @@
       {
         "logo": "/img-project/logo-game.png",
         "nameProject": "Zombie Game",
-        "des": "<p>Zombie Game adalah media latihan saya membuat game mengunakan Unity. Jadi Konsep gamenya, anda harus mencari jalan pulang untuk naik level ya. untuk mau tahu kelanjutanya tunggu part 2.</p><a href='https://game-zombie.vercel.app/' target='_blank'>Kunjungi Game Klik Disini</a> ",
+        "des": "<p>Zombie Game adalah media latihan saya membuat game mengunakan Unity. Jadi Konsep gamenya, anda harus mencari jalan pulang untuk naik level ya. untuk mau tahu kelanjutanya tunggu part 2.</p><a href='https://game-zombie.vercel.app/' target='_blank'>Kunjungi Game Klik Disini </a><a href='/unduh/gamezombie.exe' download target='_blank'>Unduh Game Klik Disini</a> ",
         "status": "Complated",
         "tahun": "2022",
         "tag": ["Unity3D", "C#"]
