@@ -99,7 +99,10 @@ function Home() {
       />
       <TopMenu>
         <div className="w-full h-screen overflow-hidden scroll-smooth ">
-          <section id="home" className="container px-4 mx-0 lg:px-0 lg:mx-auto">
+          <section
+            id="home"
+            className="container px-4 md:px-4 mx-0 lg:px-0 lg:mx-auto"
+          >
             <div className="w-full h-s  lg:h-screen  justify-center  bg-putih lg:bg-none bg-red-300 flex flex-col sm:flex-row pt-16 overflow-hidden">
               <div className="w-full lg:w-1/2  flex items-center">
                 <div
@@ -125,9 +128,11 @@ function Home() {
                       {text}
                     </p>
                   </div>
-                  <div className="text-red02 text-xl pt-3 line-clamp">
-                    {parse(replaceFonts(dataHome[0]?.abaout))}
-                  </div>
+                  <p className="text-red02 text-xl pt-3 line-clamp">
+                    Pelamanun yang suka mengubah secangkir kopi menjadi sesuatu
+                    karya yang menarik. Memiliki kreatifitas yang bisa
+                    diwujudkan, bukan hanya angan angan.
+                  </p>
                   <div id="gap" className="h-6" />
                   <Button text="Aboute Me" href={"/#about-me"} />
                 </div>
