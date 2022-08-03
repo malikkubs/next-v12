@@ -25,7 +25,8 @@ a {
 
 .container {
   max-width: calc(1280px - ((80px + 16px) * 2));
-  padding: 0px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .bg-megamendung {
   background-image: url(/megamendung10.webp);
