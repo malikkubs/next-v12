@@ -7,7 +7,7 @@ function TopMenu({
   ogtype = "Presonal Profile",
   subtitle = "Sebuah situs web Profil pribadi dari Yudian Nanda Malik ",
   title = "karyayudi.id - " + subtitle,
-  desc = "Situs Personal, Untuk Memperkenalkan siapa saya.",
+  desc = "Situs Personal, Untuk Memperkenalkan siapa Yudian Malik.",
   image = "/thumbnail.jpeg",
   keywords = "yudian, malik, yudian malik, yudi, karya yudi, next karya yudi, karyayudi.id, pemrograman, laravel, nextjs, reactjs, tailwind, petugas partai,",
   children,
