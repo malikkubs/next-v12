@@ -9,7 +9,7 @@ function TopMenu({
   title = "karyayudi.id - " + subtitle,
   desc = "Situs Personal, Untuk Memperkenalkan siapa saya.",
   image = "/thumbnail.jpeg",
-  keywords = "yudian, malik, karyayudi.id, pemrograman, laravel,nextjs, reactjs,tailwind, petugas partai,",
+  keywords = "yudian, malik, yudian malik, yudi, karya yudi, next karya yudi, karyayudi.id, pemrograman, laravel, nextjs, reactjs, tailwind, petugas partai,",
   children,
 }: any) {
   const router = useRouter();
