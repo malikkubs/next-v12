@@ -39,7 +39,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     <priority>0.9</priority>
     <lastmod>2022-11-03T03:16:20.318Z</lastmod>
   </url>
-  </url>
   <url>
     <loc>https://www.linkedin.com/in/yudian-nanda-malik-a280321b2/</loc>
     <changefreq>daily</changefreq>
