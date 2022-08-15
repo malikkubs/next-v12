@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" type="image" href="/favicon.png"></link>
+          {/* <link rel="icon" type="image" href="/favicon.png"></link> */}
           <link
             rel="manifest"
             href="/manifest.json"

@@ -76,7 +76,6 @@ function Home() {
   }
 
   function replaceFonts(bodyText: string) {
-    // console.log(bodyText);
     if (!bodyText) {
       return "";
     }

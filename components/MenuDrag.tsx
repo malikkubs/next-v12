@@ -35,7 +35,7 @@ function MenuDarg() {
     );
     let top = parseInt(getComputedStyle(document.getElementById("nav")).top);
     let haight = window.innerHeight;
-    console.log("cek", top, haight - aqwert / 2);
+    // console.log("cek", top, haight - aqwert / 2);
 
     if (top > haight - aqwert) {
       nav.style.top = haight - aqwert + "px";
@@ -45,7 +45,7 @@ function MenuDarg() {
       setDataMenu(dataKanan);
       // setDataMenu(dataMenu.sort((a, b) => a.id - b.id));
       for (let i = 0; i < child1.length; i++) {
-        console.log(i, child1[i], "qwerty");
+        // console.log(i, child1[i], "qwerty");
         child1[i].className = child1[i].className.replace(
           "posisiKanan",
           "posisiKiri"
@@ -56,7 +56,7 @@ function MenuDarg() {
     } else {
       setDataMenu(data);
       for (let i = 0; i < child1.length; i++) {
-        console.log(i, child1[i], "qwerty");
+        // console.log(i, child1[i], "qwerty");
         child1[i].className = child1[i].className.replace(
           "posisiKiri",
           "posisiKanan"
@@ -74,7 +74,7 @@ function MenuDarg() {
     nav.style.top = logY > 0 ? logY + "px" : 0 + "px";
 
     nav.style.left = logX + "px";
-    console.log(logY, logX, e);
+    // console.log(logY, logX, e);
 
     let a = parseInt(getComputedStyle(document.getElementById("nav")).left);
   }
@@ -89,7 +89,7 @@ function MenuDarg() {
 
     nav.firstElementChild.addEventListener("touchmove", touchstart);
     nav.firstElementChild.addEventListener("touchend", mouseEnd);
-    console.log("cek", nav.firstElementChild);
+    // console.log("cek", nav.firstElementChild);
   }
 
   useEffect(() => {
@@ -99,7 +99,7 @@ function MenuDarg() {
     <>
       <nav
         id="nav"
-        onClick={() => console.log("klik", window.innerHeight)}
+        // onClick={() => console.log("klik", window.innerHeight)}
         className={`pointer nav absolute z-50 lg:hidden  ${
           aktive == true ? "open" : ""
         } `}

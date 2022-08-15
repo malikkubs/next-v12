@@ -3,7 +3,7 @@ import Image from "next/image";
 import parse from "html-react-parser";
 function DetailMyProject({ open, onClose, data }: any) {
   function replaceFonts(bodyText: string) {
-    console.log(bodyText);
+    // console.log(bodyText);
     if (!bodyText) {
       return "";
     }
