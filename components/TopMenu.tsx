@@ -289,7 +289,7 @@ function TopMenu({
               />
               <MenuList
                 onClick={() => {
-                  ga.EvenClick("contact me");
+                  ga.EvenClick("/#contact-me");
                 }}
                 nameMenu="Contact Me"
                 href="/#contact-me"
