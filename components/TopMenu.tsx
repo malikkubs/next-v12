@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuDarg from "./MenuDrag";
+import * as ga from "../utils/google_analitycs.js";
 
 function TopMenu({
   ogtype = "Presonal Profile",
@@ -270,11 +271,29 @@ function TopMenu({
               />
             </div>
             <div className="flex-row hidden md:flex">
-              <MenuList nameMenu="Home" href="/#home" />
-              <MenuList nameMenu="About Me" href="/#about-me" />
-              <MenuList nameMenu="My Skill" href="/#myskill" />
-              <MenuList nameMenu="My Projects" href="/#myprojects" />
-              <MenuList nameMenu="Contact Me" href="/#contact-me" />
+              <MenuList onClick={() => {}} nameMenu="Home" href="/#home" />
+              <MenuList
+                onClick={() => {}}
+                nameMenu="About Me"
+                href="/#about-me"
+              />
+              <MenuList
+                onClick={() => {}}
+                nameMenu="My Skill"
+                href="/#myskill"
+              />
+              <MenuList
+                onClick={() => {}}
+                nameMenu="My Projects"
+                href="/#myprojects"
+              />
+              <MenuList
+                onClick={() => {
+                  ga.EvenClick("contact me");
+                }}
+                nameMenu="Contact Me"
+                href="/#contact-me"
+              />
             </div>
           </div>
         </div>
@@ -284,9 +303,12 @@ function TopMenu({
   );
 }
 
-function MenuList({ nameMenu, href }: any) {
+function MenuList({ nameMenu, href, onClick }: any) {
   return (
-    <div className="text-putih font-bold text-xl pl-6 hover:text-red">
+    <div
+      onClick={onClick}
+      className="text-putih font-bold text-xl pl-6 hover:text-red"
+    >
       <a href={href}>{nameMenu}</a>
     </div>
   );
