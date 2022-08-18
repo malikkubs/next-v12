@@ -63,7 +63,7 @@
       {
         "logo": "/img-project/ambyarfood.jpg",
         "nameProject": "ambyarfood.id",
-        "des": "<p>ambyarfood.id Situs Company Profile yang menjual makanan ringan khas searang, berupa Mantan(Makaroni Setan), Kirpik Tempe cap gedung DPR. produk tesebut unit usaha Yudian Malik bisa kunjungi di Instagram <a href='https://www.instagram.com/ambyarfooddd/' target='_blank'>@ambyarfooddd</a></p><a href='https://ambyarfood-com.vercel.app/' target='_blank'>Kunjungi Website Klik Disini</a>",
+        "des": "<p>ambyarfood.id Situs Company Profile yang menjual makanan ringan khas searang, berupa Mantan(Makaroni Setan), Kirpik Tempe cap gedung DPR. produk tesebut unit usaha Yudian Malik bisa kunjungi di Instagram <a href='https://www.instagram.com/ambyarfooddd/' target='_blank'>@ambyarfooddd</a></p><a href='https://ambyarfood-com.vercel.app/' target='_blank'>Kunjungi Website Klik Disini</a><a href='/unduh/KeryaYudiNextProd.apk' download target='_blank'>Unduh App KaryaYudi</a>",
         "status": "Complated",
         "tahun": "2020",
         "tag": ["NextJs", "ReactJs", "TillwindCss", "NodeJs", "Typescript"]
