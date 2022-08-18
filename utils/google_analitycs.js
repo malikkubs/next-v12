@@ -3,10 +3,20 @@ export function PageView(url) {
     path_url: url,
   });
 }
-export function EvenClick(url) {
+export function EvenClick(topmenu) {
   window.gtag("event", "onClick", {
-    event_category: url,
-    event_label: "TesEventLabel1",
-    value: "TesValue1",
+    top_menu_category: topmenu,
+  });
+}
+
+export function EvenClickButton(button) {
+  window.gtag("event", "onClick", {
+    Button: button,
+  });
+}
+
+export function EvenClickMenuApp(menuapp) {
+  window.gtag("event", "onClick", {
+    MenuApp: menuapp,
   });
 }

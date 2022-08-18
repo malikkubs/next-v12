@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Footer from "./Footer";
+import * as ga from "../utils/google_analitycs.js";
 
 function ContactMe() {
   return (
@@ -21,6 +22,7 @@ function ContactMe() {
                   text="yudianmalik@gmail.com"
                   link={() => {
                     window.open("mailto:yudianmalik@gmail.com");
+                    ga.EvenClickButton("Button to Email");
                   }}
                 />
                 <IconCard
@@ -29,6 +31,7 @@ function ContactMe() {
                   text="yudianwebdev"
                   link={() => {
                     window.open("https://github.com/yudianwebdev");
+                    ga.EvenClickButton("Button to Github");
                   }}
                 />
                 <IconCard
@@ -39,6 +42,7 @@ function ContactMe() {
                     window.open(
                       "https://www.linkedin.com/in/yudian-nanda-malik-a280321b2/"
                     );
+                    ga.EvenClickButton("Button to LinkedIn");
                   }}
                 />
                 <IconCard
@@ -48,6 +52,7 @@ function ContactMe() {
                     window.open(
                       "https://www.instagram.com/yudian_nanda_malik/"
                     );
+                    ga.EvenClickButton("Button to Instagram");
                   }}
                   text="yudian_nanda_malik"
                 />

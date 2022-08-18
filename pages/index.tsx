@@ -9,6 +9,7 @@ import CardProjects from "../components/CardProject";
 import DetailMyProject from "../components/modal/Detailmyproject";
 import MenuDarg from "../components/MenuDrag";
 import parse from "html-react-parser";
+import * as ga from "../utils/google_analitycs.js";
 
 interface DatDqwertya2 {
   [key: string]: any;
@@ -133,7 +134,13 @@ function Home() {
                     diwujudkan, bukan hanya angan angan.
                   </p>
                   <div id="gap" className="h-6" />
-                  <Button text="Aboute Me" href={"/#about-me"} />
+                  <Button
+                    onClick={() => {
+                      ga.EvenClickMenuApp("Button Aboute Me");
+                    }}
+                    text="Aboute Me"
+                    href={"/#about-me"}
+                  />
                 </div>
               </div>
             </div>
@@ -173,9 +180,18 @@ function Home() {
                         </div>
                       </div>
                       <div className="flex py-3 px-3">
-                        <Button text="Contact Me" href={"/#contact-me"} />
+                        <Button
+                          onClick={() => {
+                            ga.EvenClickMenuApp("Button Contact Me");
+                          }}
+                          text="Contact Me"
+                          href={"/#contact-me"}
+                        />
                         <div className="w-4" />
                         <Button2
+                          onClick={() => {
+                            ga.EvenClickMenuApp("Button My Skill");
+                          }}
                           text="Hire Me"
                           href={() => {
                             window.open("https://wa.me/+628971675097");

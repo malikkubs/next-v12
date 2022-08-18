@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import * as ga from "../utils/google_analitycs.js";
 
 function MenuDarg() {
   const [aktive, setAktive] = useState(false);
@@ -107,7 +108,10 @@ function MenuDarg() {
         <div className="toggel">
           <div
             className="IndukBtn shadow-lg opacity-75"
-            onClick={() => menuOpen()}
+            onClick={() => {
+              menuOpen();
+              ga.EvenClickButton("Button Menu App");
+            }}
           >
             <img src="/menu.svg" alt="menu" />
           </div>
@@ -120,7 +124,12 @@ function MenuDarg() {
               } `}
             >
               <div id="btnchild" onClick={() => setAktive(false)}>
-                <a href={data.link}>
+                <a
+                  onClick={() => {
+                    ga.EvenClickMenuApp(data.link);
+                  }}
+                  href={data.link}
+                >
                   <img alt="jaja" src={data.icon} />
                 </a>
               </div>

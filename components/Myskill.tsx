@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button, { Button2 } from "./Button";
+import * as ga from "../utils/google_analitycs.js";
 
 function MySkill({ data }) {
   return (
@@ -17,9 +18,18 @@ function MySkill({ data }) {
           </div>
         </div>
         <div className="flex py-3 px-3">
-          <Button text="My Projects" href={"/#myprojects"} />
+          <Button
+            onClick={() => {
+              ga.EvenClickMenuApp("Button My Projects");
+            }}
+            text="My Projects"
+            href={"/#myprojects"}
+          />
           <div className="w-4" />
           <Button2
+            onClick={() => {
+              ga.EvenClickMenuApp("Button My Skill");
+            }}
             text="Hire Me"
             href={() => {
               window.open("https://wa.me/+628971675097");

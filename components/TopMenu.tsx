@@ -271,19 +271,31 @@ function TopMenu({
               />
             </div>
             <div className="flex-row hidden md:flex">
-              <MenuList onClick={() => {}} nameMenu="Home" href="/#home" />
               <MenuList
-                onClick={() => {}}
+                onClick={() => {
+                  ga.EvenClick("/#home");
+                }}
+                nameMenu="Home"
+                href="/#home"
+              />
+              <MenuList
+                onClick={() => {
+                  ga.EvenClick("/#about-me");
+                }}
                 nameMenu="About Me"
                 href="/#about-me"
               />
               <MenuList
-                onClick={() => {}}
+                onClick={() => {
+                  ga.EvenClick("/#myskill");
+                }}
                 nameMenu="My Skill"
                 href="/#myskill"
               />
               <MenuList
-                onClick={() => {}}
+                onClick={() => {
+                  ga.EvenClick("/#myprojects");
+                }}
                 nameMenu="My Projects"
                 href="/#myprojects"
               />
