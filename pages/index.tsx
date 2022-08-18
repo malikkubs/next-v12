@@ -189,11 +189,9 @@ function Home() {
                         />
                         <div className="w-4" />
                         <Button2
-                          onClick={() => {
-                            ga.EvenClickMenuApp("Button My Skill");
-                          }}
                           text="Hire Me"
                           href={() => {
+                            ga.EvenClickMenuApp("Button Hire Me");
                             window.open("https://wa.me/+628971675097");
                           }}
                         />
