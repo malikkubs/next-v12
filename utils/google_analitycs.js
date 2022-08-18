@@ -11,12 +11,12 @@ export function EvenClick(topmenu) {
 
 export function EvenClickButton(button) {
   window.gtag("event", "onClick", {
-    Button: button,
+    button: button,
   });
 }
 
 export function EvenClickMenuApp(menuapp) {
   window.gtag("event", "onClick", {
-    MenuApp: menuapp,
+    menu_app: menuapp,
   });
 }
