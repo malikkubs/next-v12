@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Footer from "./Footer";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
 
 function ContactMe() {
   return (

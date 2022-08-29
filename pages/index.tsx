@@ -9,7 +9,7 @@ import CardProjects from "../components/CardProject";
 import DetailMyProject from "../components/modal/Detailmyproject";
 import MenuDarg from "../components/MenuDrag";
 import parse from "html-react-parser";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
 
 interface DatDqwertya2 {
   [key: string]: any;

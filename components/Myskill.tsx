@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button, { Button2 } from "./Button";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
 
 function MySkill({ data }) {
   return (
@@ -27,11 +27,9 @@ function MySkill({ data }) {
           />
           <div className="w-4" />
           <Button2
-            onClick={() => {
-              ga.EvenClickMenuApp("Button My Skill");
-            }}
             text="Hire Me"
             href={() => {
+              ga.EvenClickMenuApp("Button Hire Me");
               window.open("https://wa.me/+628971675097");
             }}
           />

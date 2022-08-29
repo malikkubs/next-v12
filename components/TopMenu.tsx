@@ -2,14 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import MenuDarg from "./MenuDrag";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
+import { useState } from "react";
 
 function TopMenu({
   ogtype = "Presonal Profile",
   subtitle = "Sebuah situs web Profil pribadi dari Yudian Nanda Malik ",
   title = "karyayudi.id - " + subtitle,
   desc = "Situs Personal, Untuk Memperkenalkan siapa Yudian Malik.",
-  image = "/thumbnail.jpeg",
+  image = "/thumnail.png",
   keywords = "yudian, malik, yudian malik, yudi, karya yudi, next karya yudi, karyayudi.id, pemrograman, laravel, nextjs, reactjs, tailwind, petugas partai,",
   children,
 }: any) {
@@ -261,7 +262,7 @@ function TopMenu({
         {/* <div style={{ zIndex: "9" }} className="absolute inset-0 ">
           
         </div> */}
-        <div className="bg-red02 w-full flex fixed z-50">
+        <div className={`bg-red02 w-full flex fixed z-50`}>
           <div className="container h-16 mx-4 lg:mx-auto flex-row flex justify-between items-center">
             <div className="flex items-center justify-center">
               <img

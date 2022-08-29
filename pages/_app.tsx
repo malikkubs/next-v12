@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 import { useEffect } from "react";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
 import { useRouter } from "next/router";
 
 // <!-- Google tag (gtag.js) -->

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
 
 function MenuDarg() {
   const [aktive, setAktive] = useState(false);

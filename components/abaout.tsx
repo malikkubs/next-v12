@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button, { Button2 } from "./Button";
-import * as ga from "../utils/google_analitycs.js";
+import * as ga from "../utils/google_analitycs";
 
 function Abaout({ body }: any) {
   return (
