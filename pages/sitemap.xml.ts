@@ -16,6 +16,12 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     <lastmod>2022-11-03T03:16:20.318Z</lastmod>
   </url>
   <url>
+    <loc>https://karyayudi.vercel.app/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
+  </url>
+  <url>
     <loc>https://next-karyayudi-id.vercel.app/#about-me</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
