@@ -15,36 +15,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     <priority>1.0</priority>
     <lastmod>2022-11-03T03:16:20.318Z</lastmod>
   </url>
-  <url>
-    <loc>https://next-karyayudi-id.vercel.app/#about-me</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://next-karyayudi-id.vercel.app/#myskill</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://next-karyayudi-id.vercel.app/#myprojects</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://next-karyayudi-id.vercel.app/#contact-me</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.linkedin.com/in/yudian-nanda-malik-a280321b2/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2022-11-03T03:16:20.318Z</lastmod>
-  </url>
 </urlset>`);
     res.end();
   }
