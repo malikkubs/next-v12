@@ -9,7 +9,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     res.setHeader("Content-Type", "text/xml");
     res.write(`
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
   <url>
     <loc>https://karyayudi.vercel.app/</loc>
     <changefreq>daily</changefreq>
