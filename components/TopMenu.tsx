@@ -233,11 +233,6 @@ function TopMenu({
           href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png"
         />
 
-        <meta
-          name="google-site-verification"
-          content="google-site-verification=X2X5kbBZbV70t_S3rVdrthLbhftqxrMn3d4FkelET9E"
-        />
-
         <meta property="twitter:card" content="summary_large_image"></meta>
         <meta
           property="twitter:url"
@@ -247,10 +242,7 @@ function TopMenu({
         <meta property="twitter:description" content={desc}></meta>
         <meta property="twitter:image" content={image}></meta>
         <meta name="theme-color" content="#cd0c0d" />
-        <meta
-          name="google-site-verification"
-          content="d9CcGvy92CknmEY4Y_N4mHk5qg7CQtt546K9TfW7ZOQ"
-        />
+
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <meta
           name="viewport"
