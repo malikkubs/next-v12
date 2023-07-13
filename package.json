@@ -10,9 +10,11 @@
     "server": "yarn build && NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
+    "@mantine/core": "^6.0.16",
+    "@mantine/dates": "^6.0.16",
+    "axios": "^1.4.0",
     "dotenv": "^16.0.1",
-    "html-react-parser": "^1.4.14",
+    "js-cookie": "^3.0.5",
     "next": "12.1.6",
     "next-pwa": "^5.5.4",
     "react": "18.1.0",
