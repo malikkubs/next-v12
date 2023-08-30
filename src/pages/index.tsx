@@ -1,8 +1,10 @@
+import Layout from "../components/Layout";
+
 function HomePage() {
   return (
-    <div className="">
+    <Layout>
       test<div>yudian</div>
-    </div>
+    </Layout>
   );
 }
 
