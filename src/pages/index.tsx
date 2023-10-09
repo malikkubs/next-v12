@@ -3,7 +3,9 @@ import Layout from "../components/Layout";
 function HomePage() {
   return (
     <Layout>
-      test<div>yudian</div>
+      <div>
+        test<div>yudian</div>
+      </div>
     </Layout>
   );
 }

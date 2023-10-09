@@ -16,7 +16,9 @@ const APINew: IApi = {
 };
 
 const Call = (url, body, config, method) => {
-  const url1 = `http://127.0.0.1:8000/api${url}`;
+  const url1 = `${process.env.NEXT_PUBLIC_HOST}${url}`;
+  console.log("cek", process.env.NEXT_PUBLIC_HOST);
+
   // const [Err, setErr] = useGlobal("Err");
   const token = Cookies.get("token");
   config.headers = {
