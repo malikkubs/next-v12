@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import H2 from "./atom/H2";
 import TextBase from "./atom/Text-Base";
-import { useEffect, useState } from "react";
+import { ScrollArea, Tooltip } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
-function Navbar({}) {
+function Navbar({ menu }) {
   let active = "home";
   interface IMenus {
     label: string;
@@ -13,6 +15,12 @@ function Navbar({}) {
     Group: string;
     Menus: IMenus[];
   }
+
+  const [hover, setHover] = useState(false);
+
+  const isXl = useMediaQuery("(max-width: 1440px)");
+  const isMd = useMediaQuery("(max-width: 1280px)");
+  const isSm = useMediaQuery("(min-width: 768px)");
   const Menu: ISidebar[] = [
     {
       Group: "Group 1",
@@ -32,11 +40,36 @@ function Navbar({}) {
           icon: (color: string) => <H2 h2={color} />,
           link: "",
         },
-      ],
-    },
-    {
-      Group: "Group 2",
-      Menus: [
+        {
+          label: "Menu1",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu1",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu1",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu1",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu1",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu1",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
         {
           label: "Menu1",
           icon: (color: string) => <H2 h2={color} />,
@@ -44,30 +77,103 @@ function Navbar({}) {
         },
       ],
     },
+    {
+      Group: "Group 2",
+      Menus: [
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+        {
+          label: "Menu2",
+          icon: (color: string) => <H2 h2={color} />,
+          link: "",
+        },
+      ],
+    },
   ];
+  useEffect(() => {
+    console.log(
+      isSm || isMd || isXl,
+      "test",
+      isMd,
+      isSm,
+      isXl,
+      !(!isSm || !isMd || !isXl)
+    );
+  });
 
   return (
-    <div className="w-full bg-2 dark:bg-5 h-screen">
-      {Menu.map(({ Group, Menus }, i) => (
-        <>
-          <H2 h2={Group} />
-          <div className="flex flex-col gap-3">
-            {Menus.map((x, i) => (
-              <div className="w-full px-4">
-                <div
+    <div className="h-[500px] md:h-[calc(100vh-72px)] flex flex-col p-0 md:p-4">
+      <ScrollArea className="bg-second rounded-none md:rounded-2xl overflow-y-auto">
+        <div className="  py-4">
+          {Menu.map(({ Group, Menus }, i) => (
+            <>
+              {/* <H2 h2={Group} /> */}
+              {Menus.map((x, i) => (
+                // <Tooltip.Floating
+                //   disabled={!isSm || !isMd || !isXl}
+                //   label="Tooltip"
+                //   position="right"
+                // >
+                <button
+                  onFocus={() => setHover(true)}
+                  id="menu"
                   className={`${
-                    active === x.link
-                      ? " bg-3 text-2 dark:bg-2 dark:text-3 font-bold "
-                      : "bg-transparent text-3 dark:text-2 "
-                  } px-4 py-2 rounded-lg `}
+                    active === x.link ? "bg-primary text-second " : ""
+                  } h-10 px-4 gap-[10px] cursor-pointer flex items-center w-full hover:bg-primary hover:bg-opacity-70 `}
                 >
-                  <TextBase Text="test" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </>
-      ))}
+                  <div className="w-[5px] h-[15px] bg-second" />
+                  <img width={24} height={24} src="/icon/icon_logo_mini.svg" />
+                  {menu && <p className="flex md:hidden xl:flex">{x.label}</p>}
+                </button>
+                // </Tooltip.Floating>
+              ))}
+            </>
+          ))}
+        </div>
+      </ScrollArea>
     </div>
   );
 }
