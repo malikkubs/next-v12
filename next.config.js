@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const WithPWA = require("next-pwa");
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
@@ -10,7 +10,7 @@ const nextConfig = {
 // withOffline(nextConfig);
 const withOffline = require("next-offline");
 module.exports = WithPWA({
-  reactStrictMode: true,
+  // reactStrictMode: true,
   pwa: {
     dest: "public",
     register: true,
