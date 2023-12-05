@@ -149,8 +149,8 @@ function Navbar({ menu }) {
       <ScrollArea className="bg-second rounded-none md:rounded-2xl overflow-y-auto">
         <div className="  py-4">
           {Menu.map(({ Group, Menus }, i) => (
-            <>
-              {/* <H2 h2={Group} /> */}
+            <div key={i}>              {/* <H2 h2={Group} /> */}
+              
               {Menus.map((x, i) => (
                 // <Tooltip.Floating
                 //   disabled={!isSm || !isMd || !isXl}
@@ -158,6 +158,7 @@ function Navbar({ menu }) {
                 //   position="right"
                 // >
                 <button
+                key={i}
                   onFocus={() => setHover(true)}
                   id="menu"
                   className={`${
@@ -170,7 +171,7 @@ function Navbar({ menu }) {
                 </button>
                 // </Tooltip.Floating>
               ))}
-            </>
+            </div>
           ))}
         </div>
       </ScrollArea>
